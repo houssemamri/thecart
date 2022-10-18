@@ -1,24 +1,21 @@
 
 <!DOCTYPE html>
 <html lang="en" class="clickfunnels-com bgCover wf-proximanova-i4-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-n7-active wf-active wf-proximanova-i3-active wf-proximanova-n3-active wf-proximanovasoft-n4-active wf-proximanovasoft-n7-active wf-proximasoft-n4-active wf-proximasoft-i4-active wf-proximasoft-i6-active wf-proximasoft-n6-active wf-proximasoft-i7-active wf-proximasoft-n7-active gr__app_clickfunnels_com avcHn2VQJenBvoR5hilPG js-focus-visible " style="background-color: rgb(255, 255, 255); overflow: initial; font-family: Montserrat, Helvetica, sans-serif !important;">
-<head data-next-url="" data-this-url="https://www.grabwave.net/wave-invite">
-<meta charset="UTF-8">
-<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-fc902efb332119fff33","applicationID":"367981416","transactionName":"dFZWTENWVQ9QExdNRlJLSFlWXEpMRQBfXUYYSU1aXVBKC1AF","queueTime":0,"applicationTime":426,"agent":""}</script>
-<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-fc902efb332119fff33",applicationID:"367981416"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<head data-next-url="" data-this-url="https://go.thecart.click/invite">
+<meta charset="UTF-8"><meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
 <meta name="viewport" content="initial-scale=1">
-<title>JV Invite - Wave</title>
-<meta class="metaTagTop" name="description" content="JV Invite - Wave">
+<title>JV Invite - The Cart</title>
+<meta class="metaTagTop" name="description" content="JV Invite - The Cart">
 <meta class="metaTagTop" name="keywords" content="">
 <meta class="metaTagTop" name="author" content="Your Name">
 <meta class="metaTagTop" property="og:image" content="" id="social-image">
-<meta property="og:title" content="JV Invite - Wave">
-<meta property="og:description" content="JV Invite - Wave">
-<meta property="og:url" content="https://www.grabwave.net/wave-invite">
+<meta property="og:title" content="JV Invite - The Cart">
+<meta property="og:description" content="JV Invite - The Cart">
+<meta property="og:url" content="https://go.thecart.click/invite">
 <meta property="og:type" content="website">
 <link rel="stylesheet" media="screen" href="./assets/lander.css">
-<link rel="canonical" href="https://www.grabwave.net/wave-invite">
+<link rel="canonical" href="https://go.thecart.click/invite">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:400,700%7CDroid+Sans:400,700%7CRoboto:400,700%7CLato:400,700%7CPT+Sans:400,700%7CSource+Sans+Pro:400,600,700%7CNoto+Sans:400,700%7CPT+Sans:400,700%7CUbuntu:400,700%7CBitter:400,700%7CPT+Serif:400,700%7CRokkitt:400,700%7CDroid+Serif:400,700%7CRaleway:400,700%7CInconsolata:400,700" rel="stylesheet" type="text/css">
@@ -31,11 +28,10 @@
 <meta property="cf:mode_id" content="1">
 <meta property="cf:time_zone" content="UTC">
 <meta property="cf:app_domain" content="app.clickfunnels.com">
-<script src="//www.grabwave.net/assets/userevents/application.js"></script>
 <style>
     [data-timed-style='fade']{display:none}[data-timed-style='scale']{display:none}
   </style>
-<link rel='icon' type='image/png' href='//www.grabwave.net/hosted/images/eb/b76fcc3f6a46daa4fbea5622f734ee/favicon.png'></link></head>
+<link rel='icon' type='image/png' href='https://thecart.nyc3.cdn.digitaloceanspaces.com/icon.png'></link></head>
 <body data-affiliate-param="affiliate_id" data-show-progress="true">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none !important">
 <filter id="grayscale">
@@ -77,7 +73,7 @@
 <div id="col-left-166" class="innerContent col_left ui-resizable col-md-3" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-89705" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/60/236fd350fa4a669056acffc5b3dbae/logo-white.png" class="elIMG ximg" alt="" width="250">
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/logo2.png" class="elIMG ximg" alt="" width="250">
 </div>
 </div>
 </div>
@@ -85,7 +81,7 @@
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-69281" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 de1pxLetterSpacing mfs_13" data-bold="inherit" style="text-align: center; color: rgb(255, 255, 255); font-size: 15px;" data-gramm="false" contenteditable="false">
-<a href="https://bit.ly/wave-doc" id="link-60348" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">JV DOC</a>   |   <a href="#prizes" id="link-63515" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">PRIZES</a>   |   <a href="https://bit.ly/wave-swipes" id="link-58304" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">SWIPES</a>  |  <a href="https://innovativez.freshdesk.com/" id="link-38183" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">SUPPORT</a>
+<a href="https://docs.google.com/document/d/1iYndoL9aEPhMMh27bZv0sWtWPgOd-_ZMLEj0Ar7x1KE/edit?usp=sharing" id="link-60348" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">JV DOC</a>   |   <a href="#prizes" id="link-63515" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">PRIZES</a>   |   <a href="https://docs.google.com/document/d/1c0Cvr1w2tE2eodS1PTS2X3YHaiPutO8SGt77t7iHUs8/edit?usp=sharing" id="link-58304" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">SWIPES</a>  |  <a href="https://thecart.freshdesk.com/" id="link-38183" class="" target="_self" rel="noopener noreferrer" style="color: rgb(255, 255, 255);">SUPPORT</a>
 </div>
 </div>
 </div>
@@ -93,7 +89,7 @@
 <div id="col-right-152" class="innerContent col_right ui-resizable col-md-3" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="3rd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-86249" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" data-google-font="Lato" data-element-theme="customized" aria-disabled="false">
-<a href="https://warriorplus.com/as/o/tnnw56" class="elButton elButtonSize1 elButtonColor1 elButtonPadding2 elButtonCorner60 elBtnHP_25 elButtonTxtColor1 elBTNone elButtonBlock elButtonFull elBTN_b_0 elButtonNoShadow ea-buttonElevate elBtnVP_15" style="color: rgb(255, 255, 255); background: rgb(27, 173, 138); font-size: 15px;" rel="noopener noreferrer">
+<a href="https://warriorplus.com/as/o/zb29pt" class="elButton elButtonSize1 elButtonColor1 elButtonPadding2 elButtonCorner60 elBtnHP_25 elButtonTxtColor1 elBTNone elButtonBlock elButtonFull elBTN_b_0 elButtonNoShadow ea-buttonElevate elBtnVP_15" style="color: rgb(255, 255, 255); background: rgb(27, 173, 138); font-size: 15px;" rel="noopener noreferrer">
 <span class="elButtonMain">Get Your Affiliate Link Here</span>
 <span class="elButtonSub"></span>
 </a>
@@ -104,13 +100,13 @@
 </div>
 </div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container noTopMargin padding40-top padding40-bottom padding40H borderSolid border3px cornersAll radius0 shadow0 activeSection_topBorder0 activeSection_bottomBorder0 fullContainer borderLightTopBottom emptySection activeSection_topBorder activeSection_bottomBorder bgCover" id="section-5015310000" data-title="copy / video" data-block-color="0074C7" style='padding-bottom: 70px; padding-top: 100px; border-color: rgba(26, 26, 26, 0.43); outline: none; background-image: url("//www.grabwave.net/hosted/images/5b/6a0431402a49fdbe1515d7d026274e/header-bg.jpg"); background-color: rgb(49, 49, 49);' data-trigger="none" data-animate="fade" data-delay="500">
+<div class="container noTopMargin padding40-top padding40-bottom padding40H borderSolid border3px cornersAll radius0 shadow0 activeSection_topBorder0 activeSection_bottomBorder0 fullContainer borderLightTopBottom emptySection activeSection_topBorder activeSection_bottomBorder bgCover" id="section-5015310000" data-title="copy / video" data-block-color="0074C7" style='padding-bottom: 70px; padding-top: 100px; border-color: rgba(26, 26, 26, 0.43); outline: none; background-image: url("./header-bg.jpg"); background-color: rgb(49, 49, 49);' data-trigger="none" data-animate="fade" data-delay="500">
 <div class="containerInner ui-sortable" style="padding-left: 0px; padding-right: 0px;">
 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--43539" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
 <div id="col-full-164" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-13206" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 elMargin0 elBGStyle0 hsTextShadow0 lh3 de1pxLetterSpacing mfs_26" style="text-align: center; font-size: 60px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>WIN $4,000+ IN JV PRIZES</b></h1>
+<h1 class="ne elHeadline hsSize3 elMargin0 elBGStyle0 hsTextShadow0 lh3 de1pxLetterSpacing mfs_26" style="text-align: center; font-size: 60px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>WIN $3,000+ IN JV PRIZES</b></h1>
 </div>
 </div>
 </div>
@@ -119,7 +115,7 @@
 <div id="col-full-128" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-83254" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 5px; outline: none; cursor: pointer;" aria-disabled="false">
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 de1pxLetterSpacing mfs_20" style="text-align: center; font-size: 30px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">Earn Up To $559.47 For Every Visitor You Send!</h2>
+<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 de1pxLetterSpacing mfs_20" style="text-align: center; font-size: 30px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">Earn Up To $199 For Every Visitor You Send!</h2>
 </div>
 </div>
 </div>
@@ -128,7 +124,7 @@
 <div id="col-full-134" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-68270" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="1000">
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/IMG_6248%20iMac%20Mockup.png" class="elIMG ximg" alt="" width="1000">
 </div>
 </div>
 </div>
@@ -148,7 +144,7 @@
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-36927" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 20px; outline: none; cursor: pointer; background-color: rgb(255, 255, 255);" aria-disabled="false">
 <h2 class="ne elHeadline hsSize2 elMargin0 elBGStyle0 hsTextShadow0 de1pxLetterSpacing mfs_12 lh2 padding5" style="text-align: center; font-size: 24px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">
-<b>Thursday 27th</b>, May @ 11am ET!</h2>
+<b>Thursday 20th</b>, October @ 10am ET!</h2>
 </div>
 </div>
 </div>
@@ -161,7 +157,7 @@
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-21228" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 20px; outline: none; cursor: pointer; background-color: rgb(255, 255, 255);" aria-disabled="false">
 <h2 class="ne elHeadline hsSize2 elMargin0 elBGStyle0 hsTextShadow0 de1pxLetterSpacing lh2 padding5" style="text-align: center; font-size: 24px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">
-<b>Monday 31st</b>, May @ Midnight ET!</h2>
+<b>Sunday 23rd</b>, October @ Midnight ET!</h2>
 </div>
 </div>
 </div>
@@ -172,39 +168,10 @@
 <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection" id="section--72793" data-title="Section" data-block-color="0074C7" style="padding-top: 80px; padding-bottom: 10px; outline: none; background-color: rgb(12, 19, 37); margin-top: -8px;" data-trigger="none" data-animate="fade" data-delay="500">
 <div class="containerInner ui-sortable">
 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--63266" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-left-141" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 30px; background-color: rgb(19, 28, 54);">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-54596" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 35px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Step 1 - For Updates</b></h1>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-83969" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh2 mfs_17" data-bold="inherit" style="text-align: center; font-size: 18px; color: rgb(255, 255, 255);" data-gramm="false" contenteditable="false">Sign Up To Get In Touch, For Important
-<div>Launch And Leaderboard Updates..</div>
-</div>
-</div>
-<div class="de elSeperator elMargin0 ui-droppable de-editable" id="tmp_divider-29854" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
-<div class="elDividerInner" style="border-color: rgb(255, 255, 255);"></div>
-</div>
-</div>
-<div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_input-28355" data-de-type="input" data-de-editing="false" data-title="input" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="name" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
-<input type="name" placeholder="Enter Your Name Here..." name="name" class="elInput elInput100 elInputMid elInputStyl0 elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight ceoinput required1 elAlign_center" data-type="extra">
-</div>
-<div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="input-12708" data-de-type="input" data-de-editing="false" data-title="input" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="email" style="margin-top: 15px; outline: none; cursor: pointer;" aria-disabled="false">
-<input type="email" placeholder="Your Email Address Here..." name="email" class="elInput elInput100 elInputMid elInputStyl0 elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight ceoinput elAlign_center required1" data-type="extra">
-</div>
-<div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-51925" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" data-google-font="Lato" aria-disabled="false" data-elbuttontype="1">
-<a href="#submit-form" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnHP_25 elButtonShadowN1 elButtonTxtColor1 elButtonFull elButtonCorner00 elBTN_b_0 elBtnVP_25" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(62, 62, 84); font-size: 20px;" rel="noopener noreferrer">
-<span class="elButtonMain">SEND ME UPDATES NOW!</span>
-<span class="elButtonSub"></span>
-</a>
-</div>
-</div>
-</div>
-<div id="col-right-182" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
+<div id="col-right-182" class="col-md-12 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 30px; background-color: rgb(19, 28, 54);">
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-54596-119" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center; font-size: 35px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Step 2 - Get Your Link</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center; font-size: 35px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Get Your Link</b></h1>
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-83969-109" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh2" data-bold="inherit" style="text-align: center; font-size: 18px; color: rgb(255, 255, 255);" data-gramm="false" contenteditable="false">Get Instant PayPal Commissions, Click The Button
@@ -220,7 +187,7 @@
 <img src="https://imgss.s3-us-west-2.amazonaws.com/instabot/warrior-plus.png" class="elIMG ximg" alt="">
 </div>
 <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="tmp_button-51925-163" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer; font-family: Lato, Helvetica, sans-serif !important;" data-google-font="Lato" aria-disabled="false">
-<a href="https://warriorplus.com/as/o/tnnw56" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnHP_25 elButtonShadowN1 elButtonTxtColor1 elButtonFull elButtonCorner00 elBTN_b_0 elBtnVP_20" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(27, 173, 138); font-size: 23px;" rel="noopener noreferrer" id="undefined-919">
+<a href="https://warriorplus.com/as/o/zb29pt" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnHP_25 elButtonShadowN1 elButtonTxtColor1 elButtonFull elButtonCorner00 elBTN_b_0 elBtnVP_20" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(27, 173, 138); font-size: 23px;" rel="noopener noreferrer" id="undefined-919">
 <span class="elButtonMain">Get Your Affiliate Link Here</span>
 <span class="elButtonSub"></span>
 </a>
@@ -242,7 +209,7 @@
 <div id="col-left-162" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-12063" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/ab/2e7d20e79e4123adcebbe3e3701493/Cover-wave.png" class="elIMG ximg" alt="" width="" height="">
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/IMG_6248%20iMac%20Mockup.png" class="elIMG ximg" alt="" width="" height="">
 </div>
 </div>
 </div>
@@ -250,18 +217,18 @@
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elHeadlineWrapper ui-droppable radius0 de-editable" id="tmp_headline1-38054" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 50px; outline: none; cursor: pointer; background-color: rgba(255, 92, 0, 0);" aria-disabled="false">
 <h1 class="ne elHeadline hsSize3 elMargin0 elBGStyle0 hsTextShadow0 lh3 de1pxLetterSpacing mfs_21 radius0 padding0" style="text-align: left; font-size: 32px; color: rgb(27, 173, 138); background-color: rgba(255, 92, 0, 0);" data-bold="inherit" data-gramm="false" contenteditable="false">
-<b>What Is Wave And How Does It </b><b style="background-color: rgba(255, 92, 0, 0); font-family: inherit;">Benefit Your Audience?</b>
+<b>What Is The Cart And How Does It </b><b style="background-color: rgba(255, 92, 0, 0); font-family: inherit;">Benefit Your Audience?</b>
 </h1>
 </div>
 <div class="de elHeadlineWrapper ui-droppable hiddenElementTools de-editable" id="tmp_paragraph-86406" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 mfs_20 lh2" data-bold="inherit" style="text-align: left; color: rgb(13, 17, 25); font-size: 20px;" data-gramm="false" contenteditable="false">
-<div>Wave Allows You Create Brand New “Profit Sites” In Under 60 Seconds or Less...</div>
-<div><br></div>This Software Will Let Your Customers Get Traffic &amp; Sales , We've Personally Tested This So It's Proven To Work To Get Results... <div>
+<div>The Cart Allows You Create Brand New “Profit Sites” In Under 60 Seconds or Less...</div>
+<div><br></div>This Software Will Let Your Customers Get Sales , We've Personally Tested This So It's Proven To Work To Get Results... <div>
 <br><div>We Provide Them With The Software, The Tutorials And Everything Else They Need To Succeed...</div>
 <div><br></div>
 <div>NOW IS THE PERFECT TIME TO BUILD YOUR PROFIT SITE.</div>
 <div><br></div>
-<div>Right Now, Millions Of People Are Stuck At Home And They’re Trying To Make Money By Sitting in Home More Than Ever…</div>
+<div>Right Now, Millions Of People Are Making Money At Home And They’re Trying To Make Money By Sitting in Home More Than Ever…</div>
 </div>
 </div>
 </div>
@@ -294,7 +261,7 @@
 <div class="de elMargin0 elScreenshot_right clearfix elFeatureImage_80_20 ui-droppable de-editable" id="tmp_featureimage-72257" data-de-type="featureimage" data-de-editing="false" data-title="Image Feature" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="elFeatureImage">
 <div class="elScreenshot_image elAlign_center">
-<img src="//www.grabwave.net/hosted/images/a6/734880403849698b03994d5369ef1a/user-g8bc221255_640.jpg" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
+<img src="./user-g8bc221255_640.jpg" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
 </div>
 <div class="elScreenshot_text">
 <div class="elScreenshot_text_padding" style="padding: 0 10px">
@@ -319,7 +286,7 @@
 <div class="de elMargin0 elScreenshot_right clearfix elFeatureImage_80_20 ui-droppable de-editable" id="featureimage-10836" data-de-type="featureimage" data-de-editing="false" data-title="Image Feature" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="elFeatureImage">
 <div class="elScreenshot_image elAlign_center">
-<img src="//www.grabwave.net/hosted/images/36/40d2352b7c417f84f2a9e2a29340fd/flat-ga786ca4ee_640.png" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
+<img src="./flat-ga786ca4ee_640.png" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
 </div>
 <div class="elScreenshot_text">
 <div class="elScreenshot_text_padding" style="padding: 0 10px">
@@ -343,11 +310,11 @@
 <div class="de elMargin0 elScreenshot_right clearfix elFeatureImage_80_20 ui-droppable de-editable" id="featureimage-56477" data-de-type="featureimage" data-de-editing="false" data-title="Image Feature" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="elFeatureImage">
 <div class="elScreenshot_image elAlign_center">
-<img src="//www.grabwave.net/hosted/images/2c/10a070de2a49dcbf648d0bc676bdf6/traffic.png" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
+<img src="./traffic.png" class="elScreenshot_image_src1 ximg imgRoundCorners" height="auto" width="100">
 </div>
 <div class="elScreenshot_text">
 <div class="elScreenshot_text_padding" style="padding: 0 10px">
-<h3 class="ne elScreenshot_text_headline ssHeadlineSize2" contenteditable="false" style="color: rgb(255, 255, 255);">Step 3: Activate The Free Auto Traffic Technology And Get Ready For PayDay!</h3>
+<h3 class="ne elScreenshot_text_headline ssHeadlineSize2" contenteditable="false" style="color: rgb(255, 255, 255);">Step 3: Activate The Free Automated Store And Get Ready For PayDay!</h3>
 <div class="ne elScreenshot_text_body ssBodySize1" contenteditable="false" style="color: rgb(255, 255, 255); font-size: 20px;"></div>
 </div>
 </div>
@@ -380,26 +347,7 @@
 <div id="col-right-109" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-28989" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="500">
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--53976" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 60px 0px 0px; outline: none;">
-<div id="col-left-177" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-89798" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="500">
-</div>
-</div>
-</div>
-<div id="col-right-106" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-50442" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_28" style="text-align: left; font-size: 32px;" data-bold="inherit" data-gramm="false" contenteditable="false"><font color="#ffffff"><b>Built In FREE Traffic</b></font></h1>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_paragraph-48530" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 25px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 mfs_18" data-bold="inherit" style="text-align: left; font-size: 20px; color: rgb(255, 255, 255);" data-gramm="false" contenteditable="false">Tap A Couple Of Buttons To Activate FREE Traffic Right Inside Your Dashboard. Attract Shoppers From Social Media And Other People’s Websites For Free.</div>
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/IMG_6248%20iMac%20Mockup.png" class="elIMG ximg" alt="" width="500">
 </div>
 </div>
 </div>
@@ -418,26 +366,7 @@
 <div id="col-right-177" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-46558" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="500">
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--35471" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 60px 0px 0px; outline: none;">
-<div id="col-left-142" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-69056" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="500">
-</div>
-</div>
-</div>
-<div id="col-right-183" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-51147" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: left; font-size: 28px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Loaded With Physical And Digital Products That Are Proven To Sell.</b></h1>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_subheadline-56589" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 15px; outline: none; cursor: pointer;" aria-disabled="false">
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: left; font-size: 18px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">Simply Tap A Few Buttons To Create A Store That’s Ready To Take Orders. No Domains, Hosting, Plugins, Design Or Coding Needed. It Couldn’t Be Easier!</h2>
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/IMG_6248%20iMac%20Mockup.png" class="elIMG ximg" alt="" width="500">
 </div>
 </div>
 </div>
@@ -456,7 +385,7 @@
 <div id="col-right-131" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-14101" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/35/9b1e227eaf4d84936bb412e3483a9c/186489883_935228197209979_8269628465762506224_n.png" class="elIMG ximg" alt="" width="500">
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/IMG_6248%20iMac%20Mockup.png" class="elIMG ximg" alt="" width="500">
 </div>
 </div>
 </div>
@@ -464,45 +393,14 @@
 </div>
 </div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection" id="section--72793-168-147" data-title="Section - Clone - Clone" data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255);" data-trigger="none" data-animate="fade" data-delay="500">
-<div class="containerInner ui-sortable">
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--69480" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-full-131" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elCustomJs elMargin0 ui-droppable de-editable" id="tmp_customjs-59201" data-de-type="customjs" data-de-editing="false" data-title="Custom JS / HTML" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="elCustomJSBg">CUSTOM JAVASCRIPT / HTML</div>
-<div class="elCustomJS_code" data-custom-js='&lt;a id="demo"&gt;&lt;/a&gt;' data-displaytype="htmlregular"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--60169" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none; color: rgb(27, 173, 138);">
-<div id="col-full-167" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-52699" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: center;font-size: 32px" data-bold="inherit" data-gramm="false" contenteditable="false">
-<b>PRODUCT DEMO</b><div><b><br></b></div>
-</h1>
-</div>
-<div class="de elVideoWrapper de-video-block elMargin0 ui-droppable elVideoWidth75 effect1 elVideoSkin1 de-editable" id="tmp_video-26721" data-de-type="video" data-de-editing="false" data-title="video" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" data-video-type="vimeo" style="outline: none; cursor: pointer;" aria-disabled="false" data-element-theme="customized" data-vimeo-url="https://vimeo.com/554674423">
-<div class="elVideoplaceholder">
-<div class="elVideoplaceholder_inner"></div>
-</div>
-<div class="elVideo" style="display: none;"><iframe width="640" height="360" src="https://player.vimeo.com/video/554674423?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" frameborder="0" allowfullscreen="" wmode="opaque"></iframe></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101" id="section--72793-168-184" data-title="Section - Clone - Clone" data-block-color="0074C7" style='padding-top: 50px; padding-bottom: 50px; outline: none; background-color: rgb(250, 184, 31); background-image: url("//www.grabwave.net/hosted/images/5b/6a0431402a49fdbe1515d7d026274e/header-bg.jpg");' data-trigger="none" data-animate="fade" data-delay="500">
+<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101" id="section--72793-168-184" data-title="Section - Clone - Clone" data-block-color="0074C7" style='padding-top: 50px; padding-bottom: 50px; outline: none; background-color: rgb(250, 184, 31); background-image: url("./header-bg.jpg");' data-trigger="none" data-animate="fade" data-delay="500">
 <div class="containerInner ui-sortable">
 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--18698" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
 <div id="col-full-136" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-79469" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_38" style="text-align: center; font-size: 48px;" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Why Should You Promote Wave?</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_38" style="text-align: center; font-size: 48px;" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Why Should You Promote The Cart?</b></h1>
 </div>
 <div class="de elSeperator elMargin0 ui-droppable de-editable" id="tmp_divider-48216" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
@@ -516,7 +414,7 @@
 <div id="col-left-133" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-27058" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/b3/eb5f6be51c4a07a8d1f772cc1ff2b0/ic-1.png" class="elIMG ximg" alt="" width="200">
+<img src="./ic-1.png" class="elIMG ximg" alt="" width="200">
 </div>
 </div>
 </div>
@@ -535,7 +433,7 @@
 <div id="col-left-133-142" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-27058-144" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/5a/8b4b8e05d94b2e862bca9c0df202ec/ic2.png" class="elIMG ximg" alt="" width="200">
+<img src="./ic2.png" class="elIMG ximg" alt="" width="200">
 </div>
 </div>
 </div>
@@ -554,7 +452,7 @@
 <div id="col-left-133-142-137" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-27058-144-135" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/de/49083e9dc64bd39564dc380031ff0d/ic3.png" class="elIMG ximg" alt="" width="200">
+<img src="./ic3.png" class="elIMG ximg" alt="" width="200">
 </div>
 </div>
 </div>
@@ -573,7 +471,7 @@
 <div id="col-left-133-142-137-180" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-27058-144-135-113" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/11/606777a51d4d68a64291be12e360fa/ic4.png" class="elIMG ximg" alt="" width="200">
+<img src="./ic4.png" class="elIMG ximg" alt="" width="200">
 </div>
 </div>
 </div>
@@ -592,7 +490,7 @@
 <div id="col-left-133-142-137-180-153" class="innerContent col_left ui-resizable col-md-4" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable hiddenElementTools de-editable" id="tmp_image-27058-144-135-113-102" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/60/65b8ab85d84a98a5edab6f4b4a4d8a/ic5.png" class="elIMG ximg" alt="" width="200">
+<img src="./ic5.png" class="elIMG ximg" alt="" width="200">
 </div>
 </div>
 </div>
@@ -602,7 +500,7 @@
 <h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0" style="text-align: left; font-size: 25px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>Reciprocation</b></h2>
 </div>
 <div class="de elHeadlineWrapper ui-droppable hiddenElementTools de-editable" id="tmp_paragraph-90954-134-180-110-100" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(255, 255, 255); font-size: 20px;" data-gramm="false" contenteditable="false">From 2015 till date, we've been consistently helping product launches, hitting back-to-back promos on an almost daily basis and crushing leaderboards.
+<div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0" data-bold="inherit" style="text-align: left; color: rgb(255, 255, 255); font-size: 20px;" data-gramm="false" contenteditable="false">We'll be consistently helping product launches, hitting back-to-back promos on an almost daily basis and crushing leaderboards.
 <div>
 </div>
 <div>...And we’ll be on your next leaderboard</div>
@@ -640,11 +538,19 @@
 </div>
 </div>
 </div>
+<div class="de elHeadlineWrapper ui-droppable hiddenElementTools de-editable" id="tmp_headline1-70145" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>FRONTEND : $27</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>OTO 1 : $29</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>OTO 2 : $67</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>OTO 3 : $79</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>OTO 4 : $69</b></h1>
+<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_24" style="text-align: center; font-size: 40px; color: rgb(19, 28, 54);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>OTO 5 : $127</b></h1>
+</div>
 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--56956" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
 <div id="col-full-157" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-58629" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="//www.grabwave.net/hosted/images/29/c33407217f47dc88dcea0094e73549/funnel.png" class="elIMG ximg" alt="" width="">
+<img src="" class="elIMG ximg" alt="" width="">
 </div>
 </div>
 </div>
@@ -652,7 +558,7 @@
 </div>
 </div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover100" id="section--25948-189" data-title="Section - Clone" data-block-color="0074C7" style='padding-top: 20px; padding-bottom: 80px; background-color: rgb(4, 4, 4); outline: none; background-image: url("//www.grabwave.net/hosted/images/f0/4713a851bf492e982b581cbf7c1243/prize-bg.png");' data-trigger="none" data-animate="fade" data-delay="500">
+<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover100" id="section--25948-189" data-title="Section - Clone" data-block-color="0074C7" style='padding-top: 20px; padding-bottom: 80px; background-color: rgb(4, 4, 4); outline: none; background-image: url("./prize-bg.png");' data-trigger="none" data-animate="fade" data-delay="500">
 <div class="containerInner ui-sortable">
 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--54542" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
 <div id="col-full-154" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
@@ -682,7 +588,7 @@
 <div id="col-full-157-138" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-58629-168" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false" data-hide-on="desktop">
-<img src="//www.grabwave.net/hosted/images/f7/0919641da646448d5a5517c9673ae8/prizes.png" class="elIMG ximg" alt="" width="">
+<img src="./prizes.png" class="elIMG ximg" alt="" width="">
 </div>
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-44819" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 30px; outline: none; cursor: pointer;" data-hide-on="mobile" aria-disabled="false">
 <img src="//www.grabwave.net/hosted/images/54/fd1cc70b394b87a6afc769a7357828/prizes.png" class="elIMG ximg" alt="">
@@ -707,36 +613,6 @@
 </div>
 </div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
-<div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection" id="section--25948-105" data-title="Section - Clone" data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; background-color: rgb(255, 255, 255); outline: none;" data-trigger="none" data-animate="fade" data-delay="500">
-<div class="containerInner ui-sortable">
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--47703-125" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; outline: none; width: 65%; max-width: 100%;">
-<div id="col-full-142-111" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="tmp_headline1-70145-140" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 elMargin0 elBGStyle0 hsTextShadow0 lh3 deUppercase de1pxLetterSpacing mfs_28" style="text-align: center; font-size: 64px; color: rgb(27, 173, 138);" data-bold="inherit" data-gramm="false" contenteditable="false"><b>We Support</b></h1>
-</div>
-<div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-11862" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<h1 class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_20" style="text-align: center; font-size: 30px; color: rgb(13, 17, 24);" data-bold="inherit" data-gramm="false" contenteditable="false">Those Who Support Us</h1>
-</div>
-<div class="de elSeperator elMargin0 ui-droppable de-editable" id="tmp_divider-91556" data-de-type="divider" data-de-editing="false" data-title="Divider" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer;" aria-disabled="false">
-<div class="elDivider elDividerStyle1 padding10-top padding10-bottom">
-<div class="elDividerInner" data-width-border="25" data-align="center" data-height-border="10" style="border-color: rgb(27, 173, 138);"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--56956-103" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-<div id="col-full-157-128" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-<div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-58629-172" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="https://imgss.s3-us-west-2.amazonaws.com/vSuite/leader_board.png" class="elIMG ximg" alt="" width="">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="dropZoneForSections ui-droppable" style="display: none;"><div class="dropIconr"><i class="fa fa-plus"></i></div></div>
 <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover100" id="section--65624" data-title="Section" data-block-color="0074C7" style="padding-top: 40px; padding-bottom: 40px; background-color: rgb(128, 44, 140); outline: none;" data-trigger="none" data-animate="fade" data-delay="500">
 <div class="containerInner ui-sortable">
@@ -758,7 +634,7 @@
 <div id="col-left-137" class="col-md-4 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="button-59947" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<a href="https://bit.ly/wave-doc" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elButtonFull" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(25, 147, 70); font-size: 35px;" rel="noopener noreferrer" id="undefined-439-283">
+<a href="https://docs.google.com/document/d/1iYndoL9aEPhMMh27bZv0sWtWPgOd-_ZMLEj0Ar7x1KE/edit?usp=sharing" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elButtonFull" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(25, 147, 70); font-size: 35px;" rel="noopener noreferrer" id="undefined-439-283">
 <span class="elButtonMain"><i class="fa_prepended fas fa-book" contenteditable="false"></i>JV DOC</span>
 <span class="elButtonSub">Click Here To Access</span>
 </a>
@@ -767,16 +643,8 @@
 </div>
 <div id="col-center-114" class="col-md-4 innerContent col_right ui-resizable" data-col="center" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"><div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="button-52434" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<a href="https://bit.ly/wave-swipes" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elButtonCorner3 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elButtonFull elBtnHP_30 elBtnVP_15" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(255, 92, 0); font-size: 25px;" rel="noopener noreferrer" id="undefined-439-283-222">
+<a href="https://docs.google.com/document/d/1c0Cvr1w2tE2eodS1PTS2X3YHaiPutO8SGt77t7iHUs8/edit?usp=sharing" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elButtonCorner3 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elButtonFull elBtnHP_30 elBtnVP_15" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(255, 92, 0); font-size: 25px;" rel="noopener noreferrer" id="undefined-439-283-222">
 <span class="elButtonMain"><i class="fa fa_prepended fas fa-book"></i> SWIPES</span>
-<span class="elButtonSub">Click Here To Access</span>
-</a>
-</div></div>
-</div>
-<div id="col-right-171" class="col-md-4 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="3rd Column" style="outline: none;">
-<div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"><div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" id="button-68416" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<a href="https://bit.ly/wave-bonuses" class="elButton elButtonSize1 elButtonColor1 elButtonRounded elButtonPadding2 elBtnVP_10 elButtonCorner3 elBtnHP_25 elBTN_b_1 elButtonShadowN1 elButtonTxtColor1 elButtonFull" style="color: rgb(255, 255, 255); font-weight: 600; background-color: rgb(218, 36, 39); font-size: 35px;" rel="noopener noreferrer" id="undefined-439">
-<span class="elButtonMain"><i class="fa_prepended fas fa-gift"></i> BONUSES</span>
 <span class="elButtonSub">Click Here To Access</span>
 </a>
 </div></div>
@@ -808,10 +676,10 @@
 <div id="col-full-105" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-52333-160" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="https://imgss.s3-us-west-2.amazonaws.com/vSuite/venkata.png" class="elIMG ximg" alt="" width="250">
+<img src="" class="elIMG ximg" alt="" width="250">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-84739-152" data-de-type="headline" data-de-editing="false" data-title="sub-headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false" style="margin-top: 30px; outline: none; cursor: pointer;" aria-disabled="false">
-<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20" style="text-align: center; font-size: 23px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">Venkata Ramana</h2>
+<h2 class="ne elHeadline hsSize2 lh3 elMargin0 elBGStyle0 hsTextShadow0 mfs_20" style="text-align: center; font-size: 23px; color: rgb(255, 255, 255);" data-bold="inherit" data-gramm="false" contenteditable="false">Houssem Amri</h2>
 </div>
 </div>
 </div>
@@ -828,20 +696,20 @@
 <img src="//www.grabwave.net/hosted/images/b7/fa2ac71d804d10916b540e0d269928/swift_finallogo.png" class="elIMG ximg" alt="" width="100">
 </div>
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="img-95234" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false" data-hide-on="desktop">
-<img src="//www.grabwave.net/hosted/images/60/236fd350fa4a669056acffc5b3dbae/logo-white.png" class="elIMG ximg" alt="" width="250">
+<img src="https://thecart.nyc3.cdn.digitaloceanspaces.com/logo2.png" class="elIMG ximg" alt="" width="250">
 </div>
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-65888" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 50px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh2 de1pxLetterSpacing" data-bold="inherit" style="text-align: left; color: rgb(255, 255, 255); font-size: 12px;" data-gramm="false" contenteditable="false">
 <div>
 <div>This site is NOT endorsed by Google, Facebook or YouTube in ANY WAY. All trademarks &amp; Logo / branding are the property of their respective owners.</div>
 <div> </div>
-<div>Income Disclaimer: This website and the items it distributes contain business strategies, marketing methods and other business advice that, regardless of my/our own results and experience, may not produce the same results (or any results) for you. Wave (and its creators) make absolutely no guarantee, expressed or implied, that by following the advice or content available from this web site you will make any money or improve current profits, as there are many factors and variables beyond our control which may impact any given business. Primarily, results will depend on the nature of the product or business model, the conditions of the marketplace, the experience of the individual, and situations and elements that are beyond your control. As with any business endeavour, you assume all risk related to investment and money based on your own discretion and at your own potential expense.</div>
+<div>Income Disclaimer: This website and the items it distributes contain business strategies, marketing methods and other business advice that, regardless of my/our own results and experience, may not produce the same results (or any results) for you. The Cart (and its creators) make absolutely no guarantee, expressed or implied, that by following the advice or content available from this web site you will make any money or improve current profits, as there are many factors and variables beyond our control which may impact any given business. Primarily, results will depend on the nature of the product or business model, the conditions of the marketplace, the experience of the individual, and situations and elements that are beyond your control. As with any business endeavour, you assume all risk related to investment and money based on your own discretion and at your own potential expense.</div>
 <div><br></div>
 <div>Liability Disclaimer: By reading this website or the documents it offers, you assume all risks associated with using the advice given, with a full understanding that you, solely, are responsible for anything that may occur as a result of putting this information into action in any way, and regardless of your interpretation of the advice. You further agree that our company cannot be held responsible in any way for the success or failure of your business as a result of the information provided by our company. It is your responsibility to conduct your own due diligence regarding the safe and successful operation of your business if you intend to apply any of our information in any way to your business operations. In summary, you understand that we make absolutely no guarantees regarding income as a result of applying this information, as well as the fact that you are solely responsible for the results of any action taken on your part as a result of any given information. In addition, for all intents and purposes you agree that our content is to be considered "for entertainment purposes only". Always seek the advice of a professional when making financial, tax or business decisions.</div>
 <div><br></div>
-<div>Guarantee Terms: The Conditional Guarantee Is Not A Promise Of Payout Whatsoever. It's Merely There To Show You That We're Confident About What We're Offering. To Qualify For The Conditional Guarantee You Must Show Clear Cut Evidence That You've Done The Work And Asked For Help And We Weren't Able To Solve The ProblemWe do not however guarantee specific results or rewards in any form. If Wave does not work as stated we will return your payment - Refunds are always honoured so there are No Risks!</div>
+<div>Guarantee Terms: The Conditional Guarantee Is Not A Promise Of Payout Whatsoever. It's Merely There To Show You That We're Confident About What We're Offering. To Qualify For The Conditional Guarantee You Must Show Clear Cut Evidence That You've Done The Work And Asked For Help And We Weren't Able To Solve The ProblemWe do not however guarantee specific results or rewards in any form. If The Cart does not work as stated we will return your payment - Refunds are always honoured so there are No Risks!</div>
 <div><br></div>
-<div>*Please Note: Wave is a software as a service (SaaS). Access is IPN linked to your payment… Refunding will cancel software access and render existing projects in your dash void immediately*</div>
+<div>*Please Note: The Cart is a software as a service (SaaS). Access is IPN linked to your payment… Refunding will cancel software access and render existing projects in your dash void immediately*</div>
 <div><br></div>
 <div>Every effort has been made to accurately represent our product and it's potential. any claims made of actual earnings or examples of actual results can be verified upon request. The testimonials and examples used are exceptional results, and don’t apply to the average purchaser and are not intended to represent or guarantee that anyone will achieve the same or similar results. Each individual’s success depends on his or her background, dedication, desire and motivation. as with any business endeavour, there is an inherent risk of loss of capital and there is no guarantee that you will earn any money.</div>
 </div>
@@ -861,7 +729,7 @@
 <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-29049" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;" aria-disabled="false">
 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh2 de1pxLetterSpacing" data-bold="inherit" style="text-align: center; color: rgb(255, 255, 255); font-size: 12px;" data-gramm="false" contenteditable="false">
 <div>
-<div>Copyright 2021 - www.grabwave.net - All Rights Reserved</div>
+<div>Copyright 2022 - The Cart - All Rights Reserved</div>
 </div>
 </div>
 </div>
@@ -1082,7 +950,7 @@
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
 <![endif]-->
-<form target="_parent" data-cf-form-action="true" action="https://www.grabwave.net/wave-invite" method="post" id="cfAR" style="display:none">
+<form target="_parent" data-cf-form-action="true" action="https://go.thecart.click/invite" method="post" id="cfAR" style="display:none">
 <span data-cf-form-fields="true"></span>
 <input id="cf_contact_name" name="contact[name]" data-cf-form-field="name" placeholder="name" data-stripe="name">
 <input id="cf_contact_first_name" name="contact[first_name]" data-cf-form-field="first_name" placeholder="first_name" data-recurly="first_name">
@@ -1487,25 +1355,6 @@
     <option value="Zambia">Zambia</option>
     <option value="Zimbabwe">Zimbabwe</option>
 </script>
-<script>
-      var page_key = '9trf10fcmc80c1d3';
-      var fid = '11009254';
-      var fspos = '1';
-      var fvrs = '5';
-      var cf_tracker = cf_tracker || [];
-      (function() {
-        cf_key = 'oj535ag2';
-        page_key = '9trf10fcmc80c1d3';
-        serverUrl = '//www.grabwave.net/images/background.png';
-        var cf = document.createElement('script');
-        cf.type = 'text/javascript';
-        cf.async = true;
-        cf.src = '//www.grabwave.net/vendor.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(cf, s);
-      })();
-    </script>
-<script type="text/javascript" src="https://app.clickfunnels.com/mailcheck.min.js" async="async"></script><script type="text/javascript">window.addEventListener("load",function(){for(var e=["ar","at","au","be","br","ca","ch","cl","cn","cz","de","dk","es","eu","fi","fr","hk","hu","in","it","jp","kr","mx","nl","no","nz","pl","pt","ru","se","tk","tr","tw","uk","us"],i=0;i<e.length;i++){var a=e[i];Mailcheck.defaultTopLevelDomains.push(a),Mailcheck.defaultTopLevelDomains.push("com."+a)}var t=Mailcheck.defaultDomains.slice();for(i=0;i<t.length;i++)for(var s=t[i],l=0;l<e.length;l++){a=e[l];Mailcheck.defaultDomains.push(s+"."+a)}Mailcheck.defaultDomains.push("clickfunnels.com"),$('input[name="email"]').on("blur",function(){_this=this,$(this).mailcheck({suggested:function(e,i){$(".email_suggestion").remove(),$(e).parent().append('<div class="email_suggestion">Did you mean <a href="#">'+i.full+"</a>?</div>")},empty:function(){$(".email_suggestion").remove()}}),$.each("chenowith52@gmail.com, test@test.com, test@gmail.com, test@mail.com".split(","),function(e,i){0<=$(_this).val().search(i.trim())&&($(".email_suggestion").remove(),$(_this).val(""),$(_this).after('<div class="email_suggestion">Please use real email.</div>'))})}),$("body").on("click",".email_suggestion a",function(){$('input[name="email"]').val($(this).text())})});</script><script type="text/javascript">function getURLParameter(e){return decodeURIComponent((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1])}function getURLParameterExact(e){for(var t=window.location.search.substring(1).split("&"),n=0;n<t.length;n++){var r=t[n].split("=");if(r[0]==e)return r[1]}}</script><script type="text/javascript">window.addEventListener("load",function(){$(function(){"null"!=getURLParameter("email")&&($('input[name="contact[email]"]').val(getURLParameterExact("email")),$("[name=email]").val(getURLParameterExact("email"))),"null"!=getURLParameter("name")&&($('input[name="contact[name]"]').val(getURLParameterExact("name")),$("[name=name]").val(getURLParameterExact("name"))),"null"!=getURLParameter("first_name")&&($('input[name="contact[first_name]"]').val(getURLParameter("first_name")),$("[name=first_name]").val(getURLParameter("first_name"))),"null"!=getURLParameter("last_name")&&($('input[name="contact[last_name]"]').val(getURLParameter("last_name")),$("[name=last_name]").val(getURLParameter("last_name"))),"null"!=getURLParameter("address_1")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_1]").val(getURLParameter("address_1"))),"null"!=getURLParameter("address_2")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_2]").val(getURLParameter("address_2"))),"null"!=getURLParameter("city")&&($('input[name="contact[city]"]').val(getURLParameter("city")),$("[name=city]").val(getURLParameter("city"))),"null"!=getURLParameter("state")&&($('input[name="contact[state]"]').val(getURLParameter("state")),$("[name=state]").val(getURLParameter("state"))),"null"!=getURLParameter("zip")&&($('input[name="contact[zip]"]').val(getURLParameter("zip")),$("[name=zip]").val(getURLParameter("zip"))),"null"!=getURLParameter("phone")&&($('input[name="contact[phone]"]').val(getURLParameter("phone")),$("[name=phone]").val(getURLParameter("phone")))})});</script>
-<script type="text/javascript" src="//www.grabwave.net/assets/pushcrew.js" async="async"></script><meta name='can_calculate_taxes' content='false'><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7574a41bebe583a3","token":"405b708a9b0242e88fda34dc27903686","version":"2022.8.1","si":100}' crossorigin="anonymous"></script>
+<meta name='can_calculate_taxes' content='false'>
 </body>
 </html>
